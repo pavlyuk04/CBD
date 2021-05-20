@@ -1,0 +1,131 @@
+
+$font: 'Oswald';
+$w: #fff;
+$g: #6E774A;
+$b: #1C1C1B;
+
+.footer {
+    background-color: #f7f8f3;
+    padding: 120px 0 0 0;
+    &__body {
+        margin: 0 auto;
+        max-width: 1200px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &__header {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .cbd-line {
+                max-width: 370px;
+                width: 100%;
+                height: 2px;
+                background-color: $g;
+            }
+            h4 {
+                font-family: $font;
+                font-size: 60px;
+                color: $g;
+                font-weight: 400;
+            }
+        }
+        &__links {
+            margin: 50px 0 0 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            .link__left-right {
+                max-width: 200px;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                a {
+                    text-decoration: none;
+                    color: $g;
+                    font-size: 16px;
+                    font-family: $font;
+                    margin: 5px 0;
+                    letter-spacing: 3px;
+                }
+            }
+            .link__mid {
+                max-width: 200px;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+                &__social {
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-around;
+                    img {
+                        width: 28px;
+                        height: 20px;
+                    }
+                }
+                .vertical-line {
+                    width: 2px;
+                    height: 55px;
+                    background-color: $g;
+                }
+            }
+        }
+        &__form {
+            max-width: 370px;
+            width: 100%;
+            margin: 20px auto;
+            h5 {
+                color: $b;
+                font-family: $font;
+                font-size: 18px;
+                text-align: center;
+            }
+            form {
+                margin: 20px 0 0 0;
+                border: 2px solid #ced6af;
+                width: 100%;
+                height: 60px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                input {
+                    outline: none;
+                    box-sizing: border-box;
+                    height: 100%;
+                    width: 75%;
+                    border: none;
+                    background-color: #f7f8f3;
+                    font-family: $font;
+                    color: #6E774A;
+                    font-size: 20px;
+                    padding: 0 20px;
+                }
+                button {
+                    outline: none;
+                    box-sizing: border-box;
+                    height: 90%;
+                    width: 23%;
+                    border: none;
+                    border-left: 2px solid #ced6af;
+                    background-color: #f7f8f3;
+                    img {
+                        width: 30px;
+                        height: 40px;
+                    }
+                }
+            }
+            p {
+                text-align: center;
+                font-family: $font;
+                color: #6E774A;
+                font-size: 11px;
+                margin: 20px 0 0 0;
+            }
+        }
+    }
+}

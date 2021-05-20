@@ -1,0 +1,104 @@
+$font: 'Oswald';
+$w: #fff;
+$g: #6E774A;
+$b: #1C1C1B;
+.products {
+    padding: 50px 0;
+    max-width: 1920px;
+    width: 100%;
+    background-color: #F7F8F3;
+    &__body {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .products__header{
+            margin: 0 0 50px 0;
+            h3 {
+                font-size: 30px;
+                font-family: $font;
+                color: $b;
+                font-weight: 400;
+                letter-spacing: 3px;
+            }
+        }
+        .products__item {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            .item__card {
+                position: relative;
+                margin: 0 5px;
+                max-width: 600px;
+                width: 100%;
+                height: 400px;
+                background-color: white;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                &__header {
+                    height: 100%;
+                    width: 100%;
+                    border: 1px solid #AAB384;
+                    padding: 30px 0 50px 0 ;
+                    text-align: center;
+                    p {
+                        color: $g;
+                        font-size: 18px;
+                    }
+                    h5 {
+                        font-size: 18px;
+                        font-family: $font;
+                        color: $b;
+                        font-weight: 400;
+                    }
+                    img {
+                        margin: 20px auto;
+                    }
+                }
+                &__footer {
+                    position: absolute;
+                    bottom: 0;
+                    display: flex;
+                    align-items: center;
+                    width: 100%;
+                    height: 50px;
+                    background-color: #f1f1f1;
+                    border: 1px solid #e1e1e1;
+                    p {
+                        padding: 0 0 0 30px ;
+                        width: 70%;
+                        text-align: left;
+                        color: $b;
+                        font-family: $font;
+                    }
+                    .shop {
+                        width: 30%;
+                        height: 100%;
+                        background-color: $g;
+                        a {
+                            display: block;
+                            text-decoration: none;
+                            color: white;
+                            font-family: $font;
+                            text-align: center;
+                            font-size: 20px;
+                            padding: 10px 0;
+                        }
+                    }
+                }
+            }
+        }
+        .product__arrow {
+            div{
+                margin: 50px 10px 10px 0;
+                display: inline-block;
+                img {
+                    width: 51px;
+                    height: 31px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,49 @@
+$font: 'Oswald';
+$w: #fff;
+$g: #6E774A;
+$b: #1C1C1B;
+
+.faq {
+    background-color: #F7F8F3;
+    padding: 100px 0;
+    max-width: 1920px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .faq__body {
+        margin: 0;
+        max-width: 570px;
+        width: 100%;
+        &__header {
+            font-family: $font;
+            font-size: 28px;
+            font-weight: 200;
+            letter-spacing: 4px;
+            color: $b;
+            text-align: center;
+            padding: 40px;
+            border-bottom: 2px solid #EAEDDE;
+        }
+        &__accardeon {
+            width: 100%;
+            .accardeon__header {
+                color: $g;
+                font-family: $font;
+                font-size: 26px;
+                letter-spacing: 3px;
+                padding: 20px;
+                cursor: pointer;
+                
+                h5 {
+                    font-weight: 200;
+                }
+            }
+            .accardeon__body {
+                display: none;
+                padding: 20px 0 20px 50px;
+                border-bottom: 2px solid #EAEDDE;
+            }
+        }
+    }
+}

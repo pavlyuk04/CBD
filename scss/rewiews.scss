@@ -1,0 +1,61 @@
+$font: 'Oswald';
+$w: #fff;
+$g: #6E774A;
+$b: #1C1C1B;
+
+.reviews {
+    max-width: 1920px;
+    width: 100%;
+    height: 800px;
+    background-image: url(../img/bg2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    &__body {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+       height: 100%;
+       &__slide {
+           max-width: 745px;
+           width: 100%;
+           text-align: center;
+           .card {
+            span {
+                color: #AAB384;
+                font-size: 20px;
+            }
+            p {
+                font-family: $font;
+                font-size: 22px;
+                color: $w;
+                font-weight: 100;
+                letter-spacing: 3px;
+                margin: 25px 0;
+            }
+            .author {
+                font-size: 24px;
+                font-weight: 400;
+            }
+           }
+        }
+        &__arrow {
+            display: flex;
+            position: absolute;
+            bottom: 0;
+            .left__arrow {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 70px;
+                height: 70px;
+                border: 1px solid white;
+                img {
+                    width: 41px;
+                    height: 31px;
+                }
+            }
+        }
+    }
+}
