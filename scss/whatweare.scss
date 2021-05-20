@@ -39,17 +39,20 @@ $b: #1C1C1B;
             display: flex;
             flex-direction: column;
             align-items: center;
+            
             width: 100%;
             margin: 100px 0 0 0;
             .info__nav {
+                margin: 0 15px;
+                max-width: 800px;
+                width: 100%;
                 box-sizing: border-box;
                 display: flex;
                 list-style: none;
-                justify-content: center;
+                justify-content: space-between;
                 border-bottom: 2px solid #CED6AF;
                 &__tab {
                     box-sizing: border-box;
-                    margin: 0 150px 0 0;
                     color: $b;
                     font-size: 30px;
                     font-family: $font;
@@ -67,9 +70,10 @@ $b: #1C1C1B;
                 .tabs__item {
                     display: none;
                     &__text {
-                        margin: 0 70px 0 0;
+                        margin: 0 70px 0 10px;
                         max-width: 400px;
                         width: 100%;
+                        min-width: 300px;
                         h4 {
                             color: black;
                             font-family: $font;
@@ -104,4 +108,121 @@ $b: #1C1C1B;
             }
         }
     }
+}
+@media screen and (max-width: 768px) {
+    .what-we-are {
+    padding: 80px 0;
+    max-width: 1920px;
+    width: 100%;
+    background-color: #F7F8F3;
+    .what-we-are__body {
+        &__table {
+            justify-content: center;
+            background-size: 100%;
+        }
+        &__info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            margin: 100px 0 0 0;
+            .info__tab {
+                .tabs__item {
+                    &__text {
+                        margin: 0 10px 0 10px;
+                        h4 {
+                            text-align: center;
+                        }
+                        p{
+                            text-align: center;
+                        }
+                    }
+                }
+
+                &__img {
+                    max-width: 270px;      
+                    img {
+                        max-height: 200px;
+                    }
+                }
+            }
+        }
+    }
+}
+}
+@media screen and (max-width: 540px) {
+    .what-we-are {
+    padding: 0px 0;
+    background-color: #F7F8F3;
+    .what-we-are__body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &__table {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-image: url(../img/bg.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 150px;
+
+            h4 { 
+                color: $b;
+                font-family: $font;
+                font-size: 26px;
+                font-weight: 400;
+                letter-spacing: 5px;
+            }
+            img {
+                max-width: 250px;
+                height: 30px;
+                width: 100%;
+                
+            }
+        }
+        &__info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+            width: 100%;
+            margin: 10px 0 0 0;
+            .info__nav {
+                &__tab {
+                    font-size: 18px;
+                }
+                .active {
+                    border-bottom:2px solid $g ;
+                    transition: 2s;
+                }
+            }
+            .info__tab {
+                margin: 18px 0px 0 0;
+                display: flex;
+                .tabs__item {
+                    display: none;
+                    &__text {
+                        h4 {
+                            color: black;
+                            font-family: $font;
+                            font-size: 20px;
+                            margin: 0 0 10px 0;
+
+                        }
+                        p{
+                            line-height: 20px;
+                        }
+                    }
+                }
+                .active {
+                    display: flex;
+                }
+                &__img {
+                    display: none;
+                }
+            }
+        }
+    }
+}
 }

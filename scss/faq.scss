@@ -47,3 +47,20 @@ $b: #1C1C1B;
         }
     }
 }
+@media screen and (max-width: 560px) {
+    .faq {
+        padding: 0px 0;
+        .faq__body {
+            &__header {
+                font-size: 24px;
+                padding: 20px;
+            }
+            &__accardeon {
+                .accardeon__header {
+                    padding: 10px;
+                }
+                
+            }
+        }
+    }
+}

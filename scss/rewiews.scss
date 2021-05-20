@@ -59,3 +59,9 @@ $b: #1C1C1B;
         }
     }
 }
+@media screen and (max-width: 886px) {
+    .reviews {
+        background-position-x: center;
+        height: 500px;
+    }
+}
