@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="slick-1.8.1/slick/slick-theme.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="js/script.js"></script>
@@ -15,15 +15,15 @@
 </head>
 
 <body>
-    <section class="hero">
+    <section class="hero" id="home">
         <div class="hero__body">
             <div class="hero__body__menu">
                 <div class="menu__nav">
                     <ul class="menu__nav__body">
-                        <a href="#" class="nav__item">HOME</a>
-                        <a href="#" class="nav__item">PRODUCTS</a>
-                        <a href="#" class="nav__item">FAQS</a>
-                        <a href="#" class="nav__item">CONTACT US</a>
+                        <a href="#home" class="nav__item">HOME</a>
+                        <a href="#products" class="nav__item">PRODUCTS</a>
+                        <a href="#faq" class="nav__item">FAQS</a>
+                        <a href="#contact" class="nav__item">CONTACT US</a>
                     </ul>
                 </div>
                 <div class="menu__burger" style="display: none;">
@@ -50,27 +50,27 @@
                 <h3>ENHANCING LIFE <br> EXCELLING IN CARE </h3>
                 <p>Choose Wisely.Choose CBD.</p>
                 <div class="header__button">
-                    <a href="#">START SHOPPING &mdash;</a>
+                    <a href="#products">START SHOPPING &mdash;</a>
                 </div>
                 <a href="">See all products <img src="img/right-arrow-white.svg" alt=""></a>
             </div>
-            <div class="hero__body__arrow"><a href="#"><img src="img/down-arrow.svg" alt=""></a></div>
+            <div class="hero__body__arrow"><a href="#tabs"><img src="img/down-arrow.svg" alt=""></a></div>
         </div>
     </section>
     <section class="what-we-are">
         <div class="what-we-are__body">
-            <div class="what-we-are__body__table">
+            <div class="what-we-are__body__table" >
                 <h4>WHAT WE ARE</h4>
-                <img src="img/logo-prod.png" alt="">
+                <img id="tabs" src="img/logo-prod.png" alt="">
             </div>
             <div class="what-we-are__body__info">
                 <ul class="info__nav">
-                    <li class="info__nav__tab"><a href="#">WHAT IS CBD?</a> </li>
-                    <li class="info__nav__tab"><a href="#">BENEFITS</a> </li>
-                    <li class="info__nav__tab"><a href="#">OUR DIFFERENCE</a></li>
+                    <li class="info__nav__tab active">WHAT IS CBD?</li>
+                    <li class="info__nav__tab">BENEFITS</li>
+                    <li class="info__nav__tab">OUR DIFFERENCE</li>
                 </ul>
                 <div class="info__tab">
-                    <div class="tabs__item">
+                    <div class="tabs__item active">
                         <div class="tabs__item__text">
                             <h4>WHAT IT IS AND HOW IT WORKS</h4>
                             <p>CBD is short for cannabidiol. It is a phytocannabinoid found in hemp and known for
@@ -84,18 +84,50 @@
                                 system.
                             </p>
                         </div>
-                        <div class="tabs__item__img">
-                            <img src="img/whatiscbd.png" alt="">
-                            <img src="img/whatiscbd2.png" alt="">
+
+                    </div>
+                    <div class="tabs__item">
+                        <div class="tabs__item__text">
+                            <h4>BENEFITS</h4>
+                            <p>There are many health benefits associated with taking CBD oil. CBD connects to your
+                                body’s cannabinoid receptors, and people report that CBD helps with complex problems
+                                like arthritis, Crohn’s disease, diabetes, multiple sclerosis, and cancer treatment.
+                                Others use it to treat more mild everyday issues like skin health, sleep, anxiety,
+                                general pain, and brain health.
+                                <br>
+                                There are many ways to take CBD. CBD is available in capsule or oil tinctures (like the
+                                ones you see here on our website), edibles, or you can even lather it on in cream form.
+                            </p>
                         </div>
                     </div>
-                    <div class="tab__item" style="display: none;">hi </div>
-                    <div class="tab__item" style="display: none;">hello</div>
+                    <div class="tabs__item">
+                        <div class="tabs__item__text">
+                            <h4>WHAT IT IS AND HOW IT WORKS</h4>
+                            <p>n 2020, CBD (cannabidiol) versus THC (tetrahydrocannabinol) is a hot topic. Both are
+                                natural compounds derived from the same plant– cannabis sativa. So what is the
+                                difference between CBD and THC?
+                                <br>
+                                CBD and THC are two of the most prominent cannabinoids found in the cannabis plant. Both
+                                cannabis and hemp produce CBD and THC. However, cannabis has a higher concentration of
+                                THC. Hemp has a higher concentration of CBD.
+                                <br>
+                                CBD and THC have the same chemical makeup, 21 carbon atoms, 30 hydrogen atoms, and two
+                                oxygen atoms. The difference is that they don’t have the same chemical arrangement, and
+                                the body receives them as different compounds. These compounds bind to neurotransmitters
+                                in your brain and affect things like mood, pain, sleep, and memory.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="info__tab__img">
+                        <img src="img/whatiscbd.png" alt="">
+                        <img src="img/whatiscbd2.png" alt="">
+                    </div>
                 </div>
+
             </div>
         </div>
     </section>
-    <section class="products">
+    <section class="products" id="products">
         <div class="products__body">
             <div class="products__header">
                 <h3>CBD FEATURED PRODUCTS</h3>
@@ -198,7 +230,7 @@
             </div>
         </div>
     </section>
-    <section class="faq">
+    <section class="faq" id="faq">
         <div class="faq__body">
             <div class="faq__body__header">
                 <h4>FREQUENTLY ASKED QUESTIONS</h4>
@@ -237,22 +269,22 @@
                     </p>
                     <p class="author">&mdash; MARK J.</p>
                 </div>
-                <div class="card" style="display: none;">
+                <div class="card">
                     <span>&#9733;&#9733;&#9733;&#9733;&#9733;</span>
                     <p>
-                        HELLO
+                        Very nice and high quality product. Thanks for the advice
                     </p>
-                    <p class="author"><span>&mdash;</span> MARK J.</p>
+                    <p class="author">&mdash; RANDOM name.</p>
                 </div>
             </div>
             <div class="reviews__body__arrow">
-                <div class="left__arrow"><img src="img/left-arrow-white.svg" alt=""></div>
-                <div class="left__arrow"><img src="img/right-arrow-white.svg" alt=""></div>
+                <div class="left__arrow left-white-arrow"><img src="img/left-arrow-white.svg" alt=""></div>
+                <div class="left__arrow right-white-arrow"><img src="img/right-arrow-white.svg" alt=""></div>
             </div>
 
         </div>
     </section>
-    <section class="footer">
+    <section class="footer" id="contact">
         <div class="footer__body">
             <div class="footer__body__header">
                 <div class="cbd-line"></div>
@@ -292,7 +324,7 @@
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="slick-1.8.1/slick/slick.js"></script>
-				
+
 </body>
 
 </html>
