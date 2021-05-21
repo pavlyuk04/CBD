@@ -5,6 +5,25 @@ window.onload = () => {
             slidesToScroll: 1,
             prevArrow: $('.left-prod-arrow'),
             nextArrow: $('.right-prod-arrow'), 
+            responsive: [
+                {
+                  breakpoint: 980,
+                  settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: false
+                  }
+                },
+                {
+                breakpoint: 560,
+                settings: {
+                  slidesToShow: 1,
+                  slidesToScroll: 1,
+                  infinite: true,
+                  dots: false
+                }
+              },]
         });
     });
 
@@ -41,5 +60,16 @@ window.onload = () => {
             nextArrow: $('.right-white-arrow'), 
         });
     });
+
+    $(document).ready(function() {
+        $(".menu__burger").click(function() {
+         $(this).toggleClass("active")
+          $('.menu__nav').slideToggle(300, function(){
+            if($(this).css('display') === "none"){
+              $(this).removeAttr('style');
+            }
+          })
+        })
+    })
    
 }
