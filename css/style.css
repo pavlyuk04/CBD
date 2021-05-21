@@ -55,6 +55,14 @@
   font-weight: 400;
   padding: 0 20px;
 }
+.hero .hero__body .hero__body__menu .menu__login {
+  display: none;
+  padding: 10px 0 0 5px;
+}
+.hero .hero__body .hero__body__menu .menu__login img {
+  width: 50px;
+  height: 50px;
+}
 .hero .hero__body .hero__body__menu .menu__search {
   max-width: 380px;
   width: 100%;
@@ -174,8 +182,11 @@
     margin: 10px 0;
     border-bottom: 2px solid rgba(255, 255, 255, 0.5);
   }
+  .hero .hero__body .hero__body__menu .menu__login {
+    display: block;
+  }
   .hero .hero__body .hero__body__menu .menu__burger {
-    padding: 15px 20px;
+    padding: 15px 10px 15px 0;
     order: 4;
     width: 40px;
     height: 40px;
@@ -900,9 +911,359 @@
   margin: 20px 0 0 0;
 }
 
+.login {
+  display: none;
+  position: fixed;
+  z-index: 150;
+  left: 40%;
+  top: 100px;
+  margin: 0 auto;
+  max-width: 300px;
+  width: 100%;
+}
+.login .login__body {
+  background-color: #f7f8f3;
+  border: 2px solid #CED6AF;
+  box-shadow: 0px 0px 30px #6E774A;
+  box-sizing: border-box;
+}
+.login .login__body__tabs {
+  box-sizing: border-box;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+.login .login__body__tabs .tabs__text {
+  background-color: #CED6AF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  font-family: "Oswald";
+  font-size: 22px;
+  letter-spacing: 1px;
+  border-bottom: 1px solid #6E774A;
+}
+.login .login__body__tabs .active {
+  background-color: #f7f8f3;
+  border-bottom: none;
+}
+.login .login__body .login__body__forms {
+  display: none;
+  position: relative;
+  padding: 20px;
+}
+.login .login__body .login__body__forms .close {
+  font-family: "Oswald";
+  text-decoration: none;
+  color: #1C1C1B;
+  font-size: 18px;
+  position: absolute;
+  right: 20px;
+  top: 40px;
+  display: flex;
+  align-items: center;
+}
+.login .login__body .login__body__forms .close span {
+  margin: 0 5px;
+  color: red;
+}
+.login .login__body .login__body__forms form h5 {
+  font-family: "Oswald";
+  margin: 20px 0;
+  font-size: 18px;
+  color: #1C1C1B;
+}
+.login .login__body .login__body__forms form input {
+  font-family: "Oswald";
+  padding: 0 10px;
+  outline: none;
+  color: #1C1C1B;
+  background-color: #CED6AF;
+  width: 100%;
+  height: 30px;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid #6E774A;
+}
+.login .login__body .login__body__forms form button {
+  font-family: "Oswald";
+  position: relative;
+  left: 75px;
+  margin: 20px 0 20px 0;
+  width: 100px;
+  height: 30px;
+  background-color: #CED6AF;
+  border: none;
+  outline: none;
+  color: #1C1C1B;
+  font-size: 20px;
+}
+.login .login__body .login__body__forms .copyright {
+  font-family: "Oswald";
+  text-align: center;
+}
+.login .login__body .login__body__forms .copyright span {
+  display: block;
+  color: #6E774A;
+  padding: 10px 0;
+  cursor: pointer;
+}
+.login .login__body .active-forms {
+  display: block;
+}
+
+@media screen and (max-width: 998px) {
+  .login {
+    display: none;
+    position: fixed;
+    z-index: 150;
+    left: 30%;
+    top: 100px;
+    margin: 0 auto;
+    max-width: 300px;
+    width: 100%;
+  }
+  .login .login__body {
+    background-color: #f7f8f3;
+    border: 2px solid #CED6AF;
+    box-shadow: 0px 0px 30px #6E774A;
+    box-sizing: border-box;
+  }
+  .login .login__body__tabs {
+    box-sizing: border-box;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    height: 50px;
+    display: flex;
+    align-items: center;
+  }
+  .login .login__body__tabs .tabs__text {
+    background-color: #CED6AF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    font-family: "Oswald";
+    font-size: 22px;
+    letter-spacing: 1px;
+    border-bottom: 1px solid #6E774A;
+  }
+  .login .login__body__tabs .active {
+    background-color: #f7f8f3;
+    border-bottom: none;
+  }
+  .login .login__body .login__body__forms {
+    display: none;
+    position: relative;
+    padding: 20px;
+  }
+  .login .login__body .login__body__forms .close {
+    font-family: "Oswald";
+    text-decoration: none;
+    color: #1C1C1B;
+    font-size: 18px;
+    position: absolute;
+    right: 20px;
+    top: 40px;
+    display: flex;
+    align-items: center;
+  }
+  .login .login__body .login__body__forms .close span {
+    margin: 0 5px;
+    color: red;
+  }
+  .login .login__body .login__body__forms form h5 {
+    font-family: "Oswald";
+    margin: 20px 0;
+    font-size: 18px;
+    color: #1C1C1B;
+  }
+  .login .login__body .login__body__forms form input {
+    font-family: "Oswald";
+    padding: 0 10px;
+    outline: none;
+    color: #1C1C1B;
+    background-color: #CED6AF;
+    width: 100%;
+    height: 30px;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid #6E774A;
+  }
+  .login .login__body .login__body__forms form button {
+    font-family: "Oswald";
+    position: relative;
+    left: 75px;
+    margin: 20px 0 20px 0;
+    width: 100px;
+    height: 30px;
+    background-color: #CED6AF;
+    border: none;
+    outline: none;
+    color: #1C1C1B;
+    font-size: 20px;
+  }
+  .login .login__body .login__body__forms .copyright {
+    font-family: "Oswald";
+    text-align: center;
+  }
+  .login .login__body .login__body__forms .copyright span {
+    display: block;
+    color: #6E774A;
+    padding: 10px 0;
+    cursor: pointer;
+  }
+  .login .login__body .active-forms {
+    display: block;
+  }
+}
+@media screen and (max-width: 660px) {
+  .login {
+    display: none;
+    position: fixed;
+    z-index: 150;
+    left: 2px;
+    top: 75px;
+    margin: 0 auto;
+    max-width: 300px;
+    width: 100%;
+  }
+  .login .login__body {
+    background-color: #f7f8f3;
+    border: 2px solid #CED6AF;
+    box-shadow: 0px 0px 30px #6E774A;
+    box-sizing: border-box;
+  }
+  .login .login__body__tabs {
+    box-sizing: border-box;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    height: 50px;
+    display: flex;
+    align-items: center;
+  }
+  .login .login__body__tabs .tabs__text {
+    background-color: #CED6AF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    font-family: "Oswald";
+    font-size: 22px;
+    letter-spacing: 1px;
+    border-bottom: 1px solid #6E774A;
+  }
+  .login .login__body__tabs .active {
+    background-color: #f7f8f3;
+    border-bottom: none;
+  }
+  .login .login__body .login__body__forms {
+    display: none;
+    position: relative;
+    padding: 20px;
+  }
+  .login .login__body .login__body__forms .close {
+    font-family: "Oswald";
+    text-decoration: none;
+    color: #1C1C1B;
+    font-size: 18px;
+    position: absolute;
+    right: 20px;
+    top: 40px;
+    display: flex;
+    align-items: center;
+  }
+  .login .login__body .login__body__forms .close span {
+    margin: 0 5px;
+    color: red;
+  }
+  .login .login__body .login__body__forms form h5 {
+    font-family: "Oswald";
+    margin: 20px 0;
+    font-size: 18px;
+    color: #1C1C1B;
+  }
+  .login .login__body .login__body__forms form input {
+    font-family: "Oswald";
+    padding: 0 10px;
+    outline: none;
+    color: #1C1C1B;
+    background-color: #CED6AF;
+    width: 100%;
+    height: 30px;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid #6E774A;
+  }
+  .login .login__body .login__body__forms form button {
+    font-family: "Oswald";
+    position: relative;
+    left: 75px;
+    margin: 20px 0 20px 0;
+    width: 100px;
+    height: 30px;
+    background-color: #CED6AF;
+    border: none;
+    outline: none;
+    color: #1C1C1B;
+    font-size: 20px;
+  }
+  .login .login__body .login__body__forms .copyright {
+    font-family: "Oswald";
+    text-align: center;
+  }
+  .login .login__body .login__body__forms .copyright span {
+    display: block;
+    color: #6E774A;
+    padding: 10px 0;
+    cursor: pointer;
+  }
+  .login .login__body .active-forms {
+    display: block;
+  }
+}
 * {
   margin: 0;
   padding: 0;
+}
+
+.spiner {
+  position: fixed;
+  z-index: 10000;
+  left: 48%;
+  display: block;
+  width: 60px;
+  margin: 200px auto;
+}
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.spiner .spiner__body {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 5px solid #CED6AF;
+  border-bottom: 5px solid #6E774A;
+  animation: rotate 1s infinite linear;
+}
+
+.spiner__none {
+  display: none;
+}
+
+.blur {
+  filter: blur(3px);
 }
 
 /*# sourceMappingURL=style.css.map */

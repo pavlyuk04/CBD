@@ -1,4 +1,50 @@
+
 window.onload = () => {
+    $('.spiner').fadeOut()
+    
+    $(document).ready(function(){
+        $('.log, .menu__login').click(function(event){
+            event.preventDefault
+            $('.login').slideToggle(100, function(){
+                if($(this).css('display')=== 'block'){
+                    $('section').addClass('blur')
+                } else if ($(this).css('display')=== 'none'){
+                    $('section').removeClass('blur')
+                }
+            })
+        })
+    })
+
+    $(document).ready(function(){
+        $('.tabs__text').click(function(){
+            $(this).addClass('active').siblings().removeClass('active')
+            $('.login__body__forms').removeClass('active-forms').eq($(this).index()).addClass('active-forms')
+        })
+    })
+
+    $(document).ready(function(event){
+        event.preventDefault
+        $('.copyright__register').click(function(){
+            $('.tabs__text:eq(0)').removeClass('active').siblings().addClass('active')
+            $('.login__body__forms').removeClass('active-forms').eq($(this).index()).addClass('active-forms')
+        })
+    })
+
+    $(document).ready(function(){
+        $('.close').click(function(event){
+            event.preventDefault
+            $('.login').slideUp(100)
+            $('section').removeClass('blur')
+        })
+    })
+    $(document).ready(function(){
+        $('section').mouseup(function(){
+            $('.login').css('display','none')
+            $('section').removeClass('blur')
+        })
+    })
+
+
     $(document).ready(function(){
         $('.products__item').slick({
             slidesToShow: 3,
@@ -27,14 +73,14 @@ window.onload = () => {
         });
     });
 
-    // Акардеон
+
     $(document).ready(function(){
         $('.accardeon__header').click(function(){
             $('.accardeon__body').not($(this).next()).slideUp(200)
             $(this).next().slideToggle(200)
         })
     })
-    // Табы
+ 
     $(document).ready(function(){
         $('.info__nav__tab').click(function(){
             $(this).addClass('active').siblings().removeClass('active')

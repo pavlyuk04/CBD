@@ -4,8 +4,38 @@
 @import "faq.scss";
 @import "rewiews.scss";
 @import "footer.scss";
+@import "login.scss";
 
 *{
     margin: 0;
     padding: 0;
+}
+.spiner {
+    position: fixed;
+    z-index: 10000;
+    left: 48%;
+    display: block;
+    width: 60px;
+    margin: 200px auto;
+    @keyframes rotate {
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+    .spiner__body {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        border: 5px solid #CED6AF;
+        border-bottom: 5px solid #6E774A;
+        animation: rotate 1s infinite linear;
+    }
+    
+}
+.spiner__none{
+    display: none;
+}
+
+.blur {
+    filter: blur(3px);
 }
