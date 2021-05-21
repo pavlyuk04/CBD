@@ -15,6 +15,44 @@
 </head>
 
 <body>
+    <section class="spiner">
+        <div class="spiner__body">
+        </div>
+    </section>
+    <div class="login">
+        <div class="login__body">
+            <div class="login__body__tabs">
+                <div class="tabs__text active" name="tab1">LOG IN</div>
+                <div class="tabs__text" name="tab2">SIGN UP</div>
+            </div>
+            <div class="login-form">
+                <div class="login__body__forms active-forms" name="tab1">
+                    <a class="close" href="#">Close <span>&#10006;</span></a>
+                    <form action="">
+                        <h5>Username</h5>
+                        <input type="username">
+                        <h5>Password</h5>
+                        <input type="password">
+                        <button type="submit">GO!</button>
+                    </form>
+                    <p class="copyright">Don't have an account? <br><span class="copyright__register">Register now</span></p>
+                </div>
+                <div class="login__body__forms " name="tab2" >
+                    <a class="close" href="#">Close<span>&#10006;</span></a>
+                    <form action="">
+                        <h5>Username</h5>
+                        <input type="username">
+                        <h5>Password</h5>
+                        <input type="password">
+                        <h5>Repeat password</h5>
+                        <input type="password">
+                        <button type="submit">GO!</button>
+                    </form>
+                    <p class="copyright">Have a nice shopping :)</p>
+                </div>
+            </div>
+        </div>
+      </div>
     <section class="hero" id="home">
         <div class="hero__body">
             <div class="hero__body__menu">
@@ -32,10 +70,13 @@
                     <span class="bot"></span>
                 </div>
                 <div class="menu__logo">CBD</div>
+                <div class="menu__login">
+                    <img src="img/user.svg" alt="">
+                </div>
                 <div class="menu__search">
                     <ul class="menu__search__body">
                         <div class="search__item">
-                            <a href="#">LOGIN</a>
+                            <a href="#" class="log">LOGIN</a>
                         </div>
                         <div class="search__item">
                             <a href="#">SEARCH</a>
