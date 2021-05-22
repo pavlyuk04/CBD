@@ -77,6 +77,7 @@ $b: #1C1C1B;
                         width: 30%;
                         height: 100%;
                         background-color: $g;
+                        transition: 0.1s;
                         a {
                             display: block;
                             text-decoration: none;
@@ -85,6 +86,13 @@ $b: #1C1C1B;
                             text-align: center;
                             font-size: 20px;
                             padding: 10px 0;
+                        }
+                    }
+                    .shop:hover {
+                        background-color: #CED6AF;
+                        transition: 0.1s;
+                        a {
+                            color: $g;
                         }
                     }
                 }
@@ -98,6 +106,9 @@ $b: #1C1C1B;
                     width: 51px;
                     height: 31px;
                 }
+            }
+            .left-prod-arrow:hover, .right-prod-arrow:hover {
+                transform: scale(1.3);
             }
         }
     }

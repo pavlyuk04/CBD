@@ -7,9 +7,9 @@
   position: relative;
   width: 100%;
   height: 100%;
-  background-image: url(../img/bg-hero.png);
+  background-image: url(../img/bg-hero.webp);
   background-position: bottom;
-  background-size: 100% 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
@@ -44,6 +44,12 @@
   font-family: "Oswald";
   font-size: 16px;
   font-weight: 400;
+  transition: 0.2s;
+}
+.hero .hero__body .hero__body__menu .menu__nav__body .nav__item:hover {
+  color: #1C1C1B;
+  transform: scale(1.2);
+  transition: 0.2s;
 }
 .hero .hero__body .hero__body__menu .menu__burger {
   display: none;
@@ -86,6 +92,12 @@
   font-family: "Oswald";
   font-size: 16px;
   text-decoration: none;
+  transition: 0.2s;
+}
+.hero .hero__body .hero__body__menu .menu__search__body .search__item a:hover {
+  color: #1C1C1B;
+  transform: scale(1.2);
+  transition: 0.2s;
 }
 .hero .hero__body .hero__body__header {
   padding: 0 20px 250px 0;
@@ -118,6 +130,7 @@
   width: 100%;
   height: 50px;
   border: 1px solid #F7F8F3;
+  transition: 0.2s;
 }
 .hero .hero__body .hero__body__header .header__button a {
   padding: 12px 0;
@@ -129,6 +142,13 @@
   font-family: "Oswald";
   text-align: center;
 }
+.hero .hero__body .hero__body__header .header__button:hover {
+  background-color: white;
+  transition: 0.2s;
+}
+.hero .hero__body .hero__body__header .header__button:hover a {
+  color: #6E774A;
+}
 .hero .hero__body .hero__body__header a {
   text-decoration: none;
   color: #F7F8F3;
@@ -136,10 +156,15 @@
   font-size: 18px;
   font-weight: 300;
   letter-spacing: 2px;
+  transition: 0.2s;
 }
 .hero .hero__body .hero__body__header a img {
   width: 31px;
   height: 17px;
+}
+.hero .hero__body .hero__body__header .see-all-prod:hover {
+  transform: scale(1.2);
+  transition: 0.2s;
 }
 .hero .hero__body .hero__body__arrow {
   position: sticky;
@@ -151,12 +176,16 @@
 }
 
 @media screen and (max-width: 900px) {
+  .hero {
+    max-width: 900px;
+  }
   .hero .hero__body .hero__body__menu .menu__nav {
     padding: 0 0 0 10px;
   }
 }
 @media screen and (max-width: 768px) {
   .hero {
+    max-width: 768px;
     height: 800px;
   }
   .hero .hero__body {
@@ -232,7 +261,8 @@
 }
 @media screen and (max-width: 480px) {
   .hero {
-    height: 650px;
+    max-width: 480px;
+    height: 600px;
   }
   .hero .hero__body {
     background-size: cover;
@@ -253,7 +283,7 @@
     margin: 10px 0;
   }
   .hero .hero__body .hero__body__header {
-    padding: 0 20px 100px 0;
+    padding: 0 20px 70px 0;
   }
   .hero .hero__body .hero__body__header h3 {
     font-size: 35px;
@@ -279,7 +309,7 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  background-image: url(../img/bg.png);
+  background-image: url(../img/bg.webp);
   background-repeat: no-repeat;
   background-position: center;
   height: 200px;
@@ -321,11 +351,11 @@
   font-size: 30px;
   font-family: "Oswald";
   cursor: pointer;
-  transition: 2s;
+  transition: 0.3s;
 }
 .what-we-are .what-we-are__body__info .info__nav .active {
   border-bottom: 2px solid #6E774A;
-  transition: 2s;
+  transition: 0.3s;
 }
 .what-we-are .what-we-are__body__info .info__tab {
   margin: 100px 0px 0 0;
@@ -416,7 +446,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: url(../img/bg.png);
+    background-image: url(../img/bg.webp);
     background-repeat: no-repeat;
     background-position: center;
     height: 150px;
@@ -549,6 +579,7 @@
   width: 30%;
   height: 100%;
   background-color: #6E774A;
+  transition: 0.1s;
 }
 .products__body .products__item .item__card__footer .shop a {
   display: block;
@@ -559,6 +590,13 @@
   font-size: 20px;
   padding: 10px 0;
 }
+.products__body .products__item .item__card__footer .shop:hover {
+  background-color: #CED6AF;
+  transition: 0.1s;
+}
+.products__body .products__item .item__card__footer .shop:hover a {
+  color: #6E774A;
+}
 .products__body .product__arrow div {
   margin: 50px 10px 10px 0;
   display: inline-block;
@@ -566,6 +604,9 @@
 .products__body .product__arrow div img {
   width: 51px;
   height: 31px;
+}
+.products__body .product__arrow .left-prod-arrow:hover, .products__body .product__arrow .right-prod-arrow:hover {
+  transform: scale(1.3);
 }
 
 @media screen and (max-width: 768px) {
@@ -704,9 +745,22 @@
   cursor: pointer;
 }
 .faq .faq__body__accardeon .accardeon__header h5 {
+  display: flex;
   font-weight: 200;
 }
+.faq .faq__body__accardeon .accardeon__header h5 .rotate {
+  margin: 0 10px 0 0;
+  display: flex;
+  transition: 0.5s;
+}
+.faq .faq__body__accardeon .accardeon__header h5 .active {
+  transform: rotate(360deg);
+  transition: 0.5s;
+}
 .faq .faq__body__accardeon .accardeon__body {
+  font-family: "Oswald";
+  color: #1C1C1B;
+  font-size: 18px;
   display: none;
   padding: 20px 0 20px 50px;
   border-bottom: 2px solid #EAEDDE;
@@ -728,7 +782,7 @@
   max-width: 1920px;
   width: 100%;
   height: 800px;
-  background-image: url(../img/bg2.png);
+  background-image: url(../img/bg2.webp);
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -834,7 +888,12 @@
   font-size: 16px;
   font-family: "Oswald";
   margin: 5px 0;
+  transition: 0.2s;
   letter-spacing: 3px;
+}
+.footer__body__links .link__left-right a:hover {
+  transform: scale(1.2);
+  transition: 0.2s;
 }
 .footer__body__links .link__mid {
   max-width: 200px;
@@ -848,10 +907,15 @@
   width: 100%;
   display: flex;
   justify-content: space-around;
+  transition: 0.2s;
 }
 .footer__body__links .link__mid__social img {
   width: 28px;
   height: 20px;
+}
+.footer__body__links .link__mid__social:hover {
+  transform: scale(1.2);
+  transition: 0.2s;
 }
 .footer__body__links .link__mid .vertical-line {
   width: 2px;
@@ -911,12 +975,41 @@
   margin: 20px 0 0 0;
 }
 
+@media screen and (max-width: 768px) {
+  .footer {
+    padding: 60px 0 0 0;
+  }
+  .footer__body {
+    width: 100%;
+  }
+  .footer__body__header h4 {
+    font-size: 50px;
+  }
+  .footer__body__links {
+    margin: 10px 0 0 0;
+  }
+  .footer__body__links .link__left-right {
+    max-width: 200px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer__body__links .link__left-right a {
+    font-size: 12px;
+    letter-spacing: 1px;
+  }
+  .footer__body__links .link__mid {
+    justify-content: center;
+  }
+}
 .login {
   display: none;
   position: fixed;
   z-index: 150;
-  left: 40%;
+  left: 50%;
   top: 100px;
+  transform: translate(-50%, 0);
   margin: 0 auto;
   max-width: 300px;
   width: 100%;
@@ -1022,7 +1115,7 @@
     display: none;
     position: fixed;
     z-index: 150;
-    left: 30%;
+    left: 50%;
     top: 100px;
     margin: 0 auto;
     max-width: 300px;
@@ -1129,8 +1222,8 @@
     display: none;
     position: fixed;
     z-index: 150;
-    left: 2px;
-    top: 75px;
+    left: 50%;
+    top: 25px;
     margin: 0 auto;
     max-width: 300px;
     width: 100%;
@@ -1151,6 +1244,7 @@
     align-items: center;
   }
   .login .login__body__tabs .tabs__text {
+    cursor: pointer;
     background-color: #CED6AF;
     display: flex;
     align-items: center;
@@ -1172,6 +1266,7 @@
     padding: 20px;
   }
   .login .login__body .login__body__forms .close {
+    cursor: pointer;
     font-family: "Oswald";
     text-decoration: none;
     color: #1C1C1B;
@@ -1205,6 +1300,7 @@
     border-bottom: 2px solid #6E774A;
   }
   .login .login__body .login__body__forms form button {
+    cursor: pointer;
     font-family: "Oswald";
     position: relative;
     left: 75px;
@@ -1239,7 +1335,8 @@
 .spiner {
   position: fixed;
   z-index: 10000;
-  left: 48%;
+  left: 50%;
+  transform: translate(-50%, 0);
   display: block;
   width: 60px;
   margin: 200px auto;
@@ -1264,6 +1361,11 @@
 
 .blur {
   filter: blur(3px);
+  transition: 0.7s;
+}
+
+section {
+  transition: 0.7s;
 }
 
 /*# sourceMappingURL=style.css.map */

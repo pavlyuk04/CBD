@@ -1,5 +1,9 @@
 $font: 'Oswald';
 $w: #fff;
+$g: #6E774A;
+$b: #1C1C1B;
+
+
 .hero {
     max-width: 1920px;
     width: 100%;
@@ -8,9 +12,9 @@ $w: #fff;
         position: relative;
         width: 100%;
         height: 100%;
-        background-image: url(../img/bg-hero.png);
+        background-image: url(../img/bg-hero.webp);
         background-position: bottom;
-        background-size: 100% 100%;
+        background-size: cover;
         background-repeat: no-repeat;
         display: flex;
         flex-direction: column;
@@ -42,6 +46,12 @@ $w: #fff;
                         font-family: $font;
                         font-size: 16px;
                         font-weight: 400;
+                        transition: 0.2s;
+                    }
+                    .nav__item:hover {
+                        color: $b;
+                        transform: scale(1.2);
+                        transition: 0.2s;
                     }
                 }
             }
@@ -82,6 +92,12 @@ $w: #fff;
                             font-family: $font;
                             font-size: 16px;
                             text-decoration: none;
+                            transition: 0.2s;
+                        }
+                        a:hover {
+                            color: $b;
+                            transform: scale(1.2);
+                            transition: 0.2s;
                         }
                     }
                 }
@@ -118,6 +134,7 @@ $w: #fff;
                 width: 100%;
                 height: 50px;
                 border: 1px solid #F7F8F3;
+                transition: 0.2s;
                 a {
                     padding: 12px 0;
                     display: block;
@@ -130,6 +147,13 @@ $w: #fff;
 
                 }
             }
+            .header__button:hover {
+                background-color: white;
+                transition: 0.2s;
+                a {
+                    color: $g;
+                }
+            }
             a {
                 text-decoration: none;
                 color: #F7F8F3;
@@ -137,10 +161,15 @@ $w: #fff;
                 font-size: 18px;
                 font-weight: 300;
                 letter-spacing: 2px;
+                transition: 0.2s;
                 img {
                     width: 31px;
                     height: 17px;
                 }
+            }
+            .see-all-prod:hover {
+                transform: scale(1.2);
+                transition: 0.2s;
             }
         }
         .hero__body__arrow {
@@ -157,7 +186,7 @@ $w: #fff;
 }
 @media screen and (max-width:900px){
     .hero {
-        
+        max-width: 900px;
         .hero__body {
             
             .hero__body__menu {
@@ -173,6 +202,7 @@ $w: #fff;
 }
 @media screen and (max-width:768px){
     .hero {
+        max-width: 768px;
         // 1080px > 800px
         height: 800px;
         .hero__body {
@@ -259,8 +289,9 @@ $w: #fff;
 }
 @media screen and (max-width:480px){
     .hero {
+        max-width: 480px;
         // 1080px > 700px
-        height: 650px;
+        height: 600px;
         .hero__body {
             background-size: cover;
             .hero__body__menu {
@@ -287,7 +318,7 @@ $w: #fff;
             }
             .hero__body__header{
                 //250px > 100px
-                padding:0 20px 100px 0;
+                padding:0 20px 70px 0;
                 
                 h3 {
                     //60px > 35px

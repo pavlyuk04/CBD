@@ -49,7 +49,12 @@ $b: #1C1C1B;
                     font-size: 16px;
                     font-family: $font;
                     margin: 5px 0;
+                    transition: 0.2s;
                     letter-spacing: 3px;
+                }
+                a:hover{
+                    transform: scale(1.2);
+                    transition: 0.2s;
                 }
             }
             .link__mid {
@@ -67,6 +72,11 @@ $b: #1C1C1B;
                         width: 28px;
                         height: 20px;
                     }
+                    transition: 0.2s;
+                }
+                &__social:hover {
+                    transform: scale(1.2);
+                    transition: 0.2s;
                 }
                 .vertical-line {
                     width: 2px;
@@ -126,6 +136,40 @@ $b: #1C1C1B;
                 font-size: 11px;
                 margin: 20px 0 0 0;
             }
+        }
+    }
+}
+
+@media screen and (max-width:768px){
+    .footer {
+        padding: 60px 0 0 0;
+        &__body {
+            width: 100%;
+            &__header {
+                .cbd-line {
+                }
+                h4 {
+                    font-size: 50px;
+                }
+            }
+            &__links {
+                margin: 10px 0 0 0;
+                .link__left-right {
+                    max-width: 200px;
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    text-align: center;
+                    a {
+                        font-size: 12px;
+                        letter-spacing: 1px;
+                    }
+                }
+                .link__mid {
+                    justify-content: center;
+                }
+            }
+            
         }
     }
 }
