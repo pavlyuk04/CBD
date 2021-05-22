@@ -16,7 +16,7 @@ $b: #1C1C1B;
             flex-direction: column;
             justify-content: space-around;
             align-items: center;
-            background-image: url(../img/bg.png);
+            background-image: url(../img/bg.webp);
             background-repeat: no-repeat;
             background-position: center;
             height: 200px;
@@ -57,11 +57,11 @@ $b: #1C1C1B;
                     font-size: 30px;
                     font-family: $font;
                     cursor: pointer;
-                    transition: 2s;
+                    transition: 0.3s;
                 }
                 .active {
                     border-bottom:2px solid $g ;
-                    transition: 2s;
+                    transition: 0.3s;
                 }
             }
             .info__tab {
@@ -162,7 +162,7 @@ $b: #1C1C1B;
             display: flex;
             flex-direction: column;
             align-items: center;
-            background-image: url(../img/bg.png);
+            background-image: url(../img/bg.webp);
             background-repeat: no-repeat;
             background-position: center;
             height: 150px;

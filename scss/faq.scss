@@ -36,10 +36,23 @@ $b: #1C1C1B;
                 cursor: pointer;
                 
                 h5 {
+                    display: flex;
                     font-weight: 200;
+                    .rotate {
+                        margin: 0 10px 0 0;
+                        display: flex;
+                        transition: 0.5s;
+                    }
+                    .active {
+                        transform: rotate(360deg);
+                        transition: 0.5s;
+                    }
                 }
             }
             .accardeon__body {
+                font-family: $font;
+                color: $b;
+                font-size: 18px;
                 display: none;
                 padding: 20px 0 20px 50px;
                 border-bottom: 2px solid #EAEDDE;

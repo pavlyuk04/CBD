@@ -76,6 +76,7 @@ window.onload = () => {
 
     $(document).ready(function(){
         $('.accardeon__header').click(function(){
+            $(this).find('.rotate').toggleClass('active')
             $('.accardeon__body').not($(this).next()).slideUp(200)
             $(this).next().slideToggle(200)
         })
